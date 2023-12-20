@@ -1,0 +1,91 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 216, 216);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "top"
+    "cont";
+    grid-template-rows: 50px 2fr;
+    width: 100%;
+    height: 100vh;
+    font-family: arial;
+}
+
+.top, .cont, .logo, .menu, .bot1 {
+    display: flex;
+}
+.top {
+    grid-area: top;
+    background-color: rgb(48, 48, 48);
+    justify-content: space-between;
+    width: 40.62%;
+}
+.menu {
+    width: 14%;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.bot1 {
+    width: 110%;
+    height: 100%;
+}
+button {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+}button:hover {
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.cont {
+    grid-area: cont;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40.62%;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.tabela {
+    width: 100%;
+    text-align: center;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+th, td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+th:hover{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    border: none;
+}
+
+.tabela>div {
+    margin-top: 2%;
+    overflow-x: auto;
+}

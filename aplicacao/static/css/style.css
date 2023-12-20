@@ -1,0 +1,186 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 216, 216);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "top"
+    "cont";
+    grid-template-rows: 50px 2fr;
+    width: 100%;
+    height: 100vh;
+    font-family: arial;
+}
+
+.top, .cont, .logo, .menu, .bot1 {
+    display: flex;
+}
+.top {
+    grid-area: top;
+    background-color: rgb(48, 48, 48);
+    justify-content: space-between;
+}
+.menu {
+    width: 14%;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.bot1 {
+    width: 110%;
+    height: 100%;
+}
+button {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+}button:hover {
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.cont {
+    grid-area: cont;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+.form, .ent, .env {
+    display: flex;
+}
+
+.form {
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(143, 143, 143);
+    margin-top: 5%;
+    width: 30%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.ent {
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.env {
+    padding-right: 5%;
+    width: 20%;
+    height: 20%;
+}
+
+.env button {
+    border-radius: 5px;
+}
+
+.con {
+    height: 20%;
+    margin-left: 85%;
+    margin-top: 30%;
+}
+.con button {
+    border-radius: 5px;
+}
+
+.jogos {
+    width: 60%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.jogos>a>div {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid #585858;
+    display: flex;
+    justify-content: space-between;
+}
+.jogos>a {
+    color: black;
+}
+.jogos>a:hover {
+    color: white;
+}
+.jogos>a>div:hover {
+    background-color: #585858;
+    border-radius: 1vw;
+}
+
+.casasLine {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #585858;
+}
+
+.logoBet {
+    border-radius: 0.3vw;
+    width: 40%;
+}
+
+.odds {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.odds>div {
+    width: 30%;
+    text-align: center;
+    border-radius: 0.3vw;
+    height: fit-content;
+}
+
+.res {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+
+.res:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.res__content {
+    border-radius: 4px;
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    background: #fff;
+    padding: 2em 3em;
+    font-size: smaller;
+}
+
+.res__close {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    color: #585858;
+    text-decoration: none;
+}
