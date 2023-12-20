@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./scrapping/infs",
+        "./scrapping/odds"
+    ]
+}
